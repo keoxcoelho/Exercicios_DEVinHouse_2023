@@ -1,0 +1,21 @@
+const MAXIMO_ELEMENTOS = 5;
+let nomes = [];
+let anosNascimento = [];
+
+// Lendo os nomes
+for (let i = 0; i < MAXIMO_ELEMENTOS; i++) {
+    let nome = prompt("Digite o nome da pessoa " + (i + 1) + ":");
+    nomes.push(nome);
+}
+
+// Lendo os anos de nascimento
+for (let i = 0; i < MAXIMO_ELEMENTOS; i++) {
+    let ano = parseInt(prompt("Digite o ano de nascimento da pessoa " + (i + 1) + ":"));
+    anosNascimento.push(ano);
+}
+
+// Mostrando os nomes concatenados com a idade
+for (let i = 0; i < MAXIMO_ELEMENTOS; i++) {
+    let idade = new Date().getFullYear() - anosNascimento[i];
+    console.log("Nome: " + nomes[i] + " - Idade: " + idade);
+}
