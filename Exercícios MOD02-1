@@ -1,0 +1,40 @@
+//Leia números de uma Matriz 3x3
+//Faça a soma da primeira linha (índice 0)
+//Faça a soma da segunda coluna (índice 1)
+
+//Iniciei o programa definindo a funcao principal. Em seguida, declarei uma matriz 3x3 chamada "matriz" do tipo inteiro. Também declarei duas variáveis inteiras, "somaLinha" e "somaColuna", e as inicializei com zero.
+//ponto-inicio, condição de parada, incrementador
+//O loop externo é controlado pela variável "i", que representa as linhas, e o loop interno é controlado pela variável "j", que representa as colunas. Para cada posição [i][j] na matriz, solicitamos ao usuário que insira um valor usando a função "escreva" e lemos o valor fornecido pelo usuário usando a função "leia". O valor é armazenado na posição correspondente da matriz.
+//Verificamos se estamos na primeira linha (i == 0) ou na segunda coluna (j == 1). Se estiver na primeira linha, adicionei o valor atual da posição [i][j] à variável "somaLinha". Se estiver na segunda coluna, adicionei o valor atual da posição [i][j] à variável "somaColuna".
+//Por fim, usei a função "escreva" para exibir a soma da primeira linha e a soma da segunda coluna na matriz.
+
+programa
+{
+	funcao inicio()
+	{
+		inteiro matriz[3][3]
+		inteiro somaLinha = 0
+		inteiro somaColuna = 0
+
+		para(inteiro i = 0; i < 3; i++){
+			para(inteiro j = 0; j < 3; j++){
+				escreva("Insira o valor para a posição [", i, "][", j, "]: ")
+				leia(matriz[i][j])
+
+				se(i == 0){
+					somaLinha = somaLinha + matriz[i][j]
+				}
+
+				se(j == 1){
+					somaColuna = somaColuna + matriz[i][j]
+				}
+			}
+		}
+
+		escreva("A soma da primeira linha é: ", somaLinha, "\n")
+		escreva("A soma da segunda coluna é: ", somaColuna, "\n")
+	}
+}
+
+
+    
