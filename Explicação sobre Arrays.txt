@@ -54,3 +54,76 @@ const frutasFatia = frutas.slice(1, 3);
 console.log(frutasFatia); // Saída: ["banana", "laranja"]
 
 ------------------------------------------------------------
+
+Concat --> combina dois ou mais arrays em um único array
+
+join --> juntar todos os elementos de um array em uma única string
+
+indexOf --> retorna o índice da primeira ocorrência de um elemento 
+
+reverse --> inverte a ordem dos elementos em um array
+
+toString --> converte um array em uma string contendo a representação dos elementos do array separados por vírgulas
+
+------------------------------------------------------------
+
+--> LOOP FOR..Of
+
+Considerando um array de frutas, queremos exibir cada fruta no console. Para isso, podemos utilizar o loop for...of. Veja o exemplo abaixo: 
+
+let frutas = ["maçã", "banana", "laranja"];
+
+for (let fruta of frutas) {
+  console.log("A fruta é: " + fruta);
+}
+
+Quando você utiliza a palavra-chave for para criar um loop, a variável definida na expressão for é local ao escopo do bloco do loop. No caso do for...of, se você não utilizar a palavra-chave let, const ou var para declarar a variável, ela será automaticamente tratada como uma variável local (ou seja, será tratada como let).
+
+Neste exemplo, temos um array chamado frutas com três elementos: "maçã", "banana" e "laranja". O loop for...of percorre cada elemento do array. Em cada iteração, a variável fruta recebe o valor do próximo elemento.
+
+Durante a execução do loop, ele imprime a frase "A fruta é:" seguida do valor da fruta. A saída será:
+
+A fruta é: maçã
+A fruta é: banana
+A fruta é: laranja
+
+
+Assim, o loop for...of nos permite percorrer facilmente cada elemento do array de frutas, exibindo cada fruta de forma simples e intuitiva.
+
+**um iterável é definido como: Um objeto capaz de retornar seus membros um de cada vez.
+**a variável fruta é declarada para representar cada elemento do array frutas.
+
+------------------------------------------------------------
+
+--> LOOP FOR..IN
+
+O loop for...in é utilizado para percorrer as propriedades de um objeto. Veja o exemplo abaixo:
+
+let carro = {
+  marca: "Ford",
+  modelo: "Fiesta",
+  placa: "ABC1234"
+};  
+
+for (let propriedade in carro) {
+  console.log(propriedade);
+}
+
+Neste exemplo, temos um objeto chamado carro com três propriedades: marca, modelo e placa. O loop for...in percorre cada propriedade do objeto. Em cada iteração, a variável propriedade recebe o nome da próxima propriedade.
+
+Durante a execução do loop, ele imprime o nome da propriedade. A saída será:
+
+marca
+modelo
+
+Assim, o loop for...in nos permite percorrer facilmente cada propriedade de um objeto, exibindo cada propriedade de forma simples e intuitiva.
+
+**um objeto é definido como: Uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor.
+
+**diferença entre FOR OF e FOR IN: 
+O for...of percorre cada elemento de um objeto iterável, enquanto o for...in percorre cada propriedade enumerável de um objeto.
+
+------------------------------------------------------------
+
+
+
