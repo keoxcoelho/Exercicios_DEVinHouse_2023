@@ -157,6 +157,32 @@ for(i=1; i <= 10; i++){
     console.log(resultado + " é o resultado.");
 }
 
+// Transfor o código em função
+// const somaDoisNumeros = 1 + 2
+// console.log(somaDoisNumeros)  output: 3 //
+
+function somaDoisNumeros() {
+    let soma = 1+1;
+    console.log(soma);}
+    somaDoisNumeros();
+
+
+// Após criar a função para imprimir. Adicione um retorno para quem for receber o resultado e imprima o valor. Como você faria? //
+
+function somaDoisNumeros() {
+    let soma = 1+1;
+    return soma;}
+    console.log(somaDoisNumeros());
+
+    
+
+
+
+
+   
+
+
+
 
 
 
