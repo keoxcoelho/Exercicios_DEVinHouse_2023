@@ -175,6 +175,90 @@ function somaDoisNumeros() {
     console.log(somaDoisNumeros());
 
     
+// Manipulação de Array Crie um array vazio []; 
+// Adicione três cores (amarelo, vermelho e rosa) ['amarelo', 'vermelho', 'rosa'];
+// Adicione no começo da array (azul e roxo) ['azul', 'roxo', 'amarelo', 'vermelho', 'rosa'];
+// Imprima o tamanho da array
+
+let cores = [];
+cores.push["amarelo", "vermelho", "rosa"];
+cores.unshift["azul", "roxo"];
+console.log(cores.length);
+
+
+// Crie uma outra array a partir da primeira array somente com as cores da posição 1 e 2 (roxo e amarelo)
+// Agora volte na primeira array remova o último elemento (rosa)
+// Agora junte as duas arrays e imprima os elementos
+
+let cores = ["azul", "roxo", "amarelo", "vermelho", "rosa"];
+let cores2 = cores.slice(1, 3);
+console.log(cores2);
+
+cores.pop();
+console.log(cores);
+
+let cores3 = cores.concat(cores2);
+console.log(cores3);
+
+
+// A Clamed Farmácias atua nos seguintes estados do Brasil:
+// Paraná
+// Santa Catarina
+// Rio Grande do Sul
+// São Paulo
+// Minas Gerais
+// Rio de Janeiro
+// Após adicionar os estados na ordem correta imprima os "indíces/posição dos estados 'São Paulo','Minas Gerais';
+// Verifica se existe um estado "Mato Grosso do Sul", se não existir imprima uma mensagem "Logo estaremos atuando nesta região"
+
+let estados = ["Paraná", "Santa Catarina", "Rio Grande do Sul", "São Paulo", "Minas Gerais", "Rio de Janeiro"];
+
+console.log(estados.indexOf("São Paulo"));
+console.log(estados.indexOf("Minas Gerais"));
+
+if (estados.indexOf("Mato Grosso do Sul") == -1) {
+    console.log("Logo estaremos atuando nesta região.");
+}
+
+
+
+// A Clamed Farmácias atua nos seguintes estados do Brasil:
+// Paraná
+// Santa Catarina
+// Rio Grande do Sul
+// São Paulo
+// Minas Gerais
+// Rio de Janeiro
+// Crie uma função que receba por parâmetro um nome do estado e adicione na lista de estados.
+// Verifica se o estado já existe e mostre mensagem "Estado já está na lista"
+// Verificar se estado existe na lista e mostre mensagem "Estado acabou de ser adicionado, pois ainda não estava cadastrado": 
+// "Mato Grosso"
+// "Santa Catarina"
+
+let estados = ["Paraná", "Santa Catarina", "Rio Grande do Sul", "São Paulo", "Minas Gerais", "Rio de Janeiro"];
+
+function adicionarEstado(estado) {
+    if (estados.includes(estado)) {
+        console.log("Estado já está na lista.");
+    } else {
+        estados.push(estado);
+        console.log("Estado acabou de ser adicionado, pois ainda não estava cadastrado.");
+    }
+}
+
+adicionarEstado("Mato Grosso");
+adicionarEstado("Santa Catarina");
+
+console.log(estados);
+
+
+
+
+
+
+
+
+
 
 
 
