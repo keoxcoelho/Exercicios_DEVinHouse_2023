@@ -1,0 +1,56 @@
+--> Length (comprimento): número de elementos presentes. 
+
+const frutas = ["maçã", "banana", "laranja"];
+console.log(frutas.length); // Saída: 3
+
+------------------------------------------------------------
+
+--> Push: adiciona um ou mais elementos ao final. 
+
+const frutas = ["maçã", "banana"];
+frutas.push("laranja");
+console.log(frutas); // Saída: ["maçã", "banana", "laranja"]
+
+------------------------------------------------------------
+
+--> Pop: remove o último elemento e retorna esse elemento. 
+
+const frutas = ["maçã", "banana", "laranja"];
+const frutaRemovida = frutas.pop();
+console.log(frutaRemovida); // Saída: "laranja"
+console.log(frutas); // Saída: ["maçã", "banana"]
+
+------------------------------------------------------------
+
+--> Unshift: adiciona um ou mais elementos no início.
+
+const frutas = ["maçã", "banana"];
+frutas.unshift("laranja");
+console.log(frutas); // Saída: ["laranja", "maçã", "banana"]
+
+------------------------------------------------------------
+
+--> Shift: remove o primeiro elemento e retorna esse elemento. 
+
+const frutas = ["maçã", "banana", "laranja"];
+const frutaRemovida = frutas.shift();
+console.log(frutaRemovida); // Saída: "maçã"
+console.log(frutas); // Saída: ["banana", "laranja"]
+
+------------------------------------------------------------
+
+--> Splice: permite alterar o conteúdo, removendo, substituindo ou adicionando elementos. Ele recebe dois parâmetros obrigatórios: o índice de início e o número de elementos a serem removidos. Além disso, é possível adicionar elementos adicionais, se desejar. 
+
+const frutas = ["maçã", "banana", "laranja", "kiwi"];
+frutas.splice(1, 2, "uva", "pera");
+console.log(frutas); // Saída: ["maçã", "uva", "pera", "kiwi"]
+
+------------------------------------------------------------
+
+--> Slice: retorna uma cópia superficial de uma porção de um array em um novo array. Ele recebe dois parâmetros opcionais: o índice de início e o índice de fim (não incluído). 
+
+const frutas = ["maçã", "banana", "laranja", "kiwi"];
+const frutasFatia = frutas.slice(1, 3);
+console.log(frutasFatia); // Saída: ["banana", "laranja"]
+
+------------------------------------------------------------
