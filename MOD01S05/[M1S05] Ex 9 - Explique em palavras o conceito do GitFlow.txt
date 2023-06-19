@@ -1,0 +1,38 @@
+// Crie um arquivo markdown explique com suas palavras o conceito do GitFlow e como ele é utilizado no controle de versão de um projeto.
+
+# GitFlow
+
+O GitFlow é um modelo de fluxo de trabalho para controle de versão baseado no Git. Ele fornece uma estrutura clara para organizar as branches e as atividades relacionadas ao desenvolvimento de software em um projeto. O GitFlow foi popularizado por Vincent Driessen e é amplamente adotado em equipes de desenvolvimento de software.
+
+## Branches Principais
+
+No GitFlow, o desenvolvimento do projeto é dividido em duas branches principais:
+
+- A branch "master" contém as versões estáveis e finalizadas do software.
+- A branch "develop" é usada como ramificação principal para o desenvolvimento contínuo.
+
+## Branches Adicionais
+
+Além das branches principais, o GitFlow utiliza as seguintes branches adicionais:
+
+### Feature branches (branches de funcionalidade)
+
+- São criadas a partir da branch "develop".
+- São usadas para desenvolver novas funcionalidades ou implementar alterações específicas.
+- Cada funcionalidade é desenvolvida em sua própria branch separada, o que facilita o trabalho paralelo entre os membros da equipe.
+- Após concluir o desenvolvimento, a branch de funcionalidade é mesclada de volta na branch "develop".
+
+### Release branches (branches de lançamento)
+
+- São criadas a partir da branch "develop" quando o software está pronto para um novo lançamento.
+- São usadas para finalizar os últimos ajustes, correções de bugs e preparar o software para o lançamento.
+- Uma vez concluído o processo de lançamento, a branch de lançamento é mesclada tanto na branch "master" quanto na branch "develop".
+- A branch de lançamento recebe uma tag para marcar a versão do software.
+
+### Hotfix branches (branches de correção)
+
+- São criadas a partir da branch "master" quando há a necessidade de corrigir bugs críticos em produção.
+- Permitem que a equipe trate de problemas imediatos sem interferir no desenvolvimento contínuo na branch "develop".
+- Após a correção, a branch de correção é mesclada tanto na branch "master" quanto na branch "develop", garantindo que a correção seja aplicada em ambos.
+
+O GitFlow oferece uma estrutura clara para o desenvolvimento colaborativo e o controle de versão em um projeto. Ele permite que diferentes funcionalidades e correções sejam desenvolvidas em paralelo e fornece um caminho bem definido para mesclar as alterações nas branches apropriadas. Além disso, a separação entre as branches de desenvolvimento, lançamento e correção ajuda a manter a estabilidade do software em produção.
