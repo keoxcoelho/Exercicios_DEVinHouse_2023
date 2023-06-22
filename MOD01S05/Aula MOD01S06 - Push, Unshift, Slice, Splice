@@ -1,0 +1,48 @@
+let linguagens = ["cobol", "php", "c#"];
+
+//adciona no final do array
+linguagens.push = ["java"];
+
+//adciona no inicio do array
+linguagens.unshift("c++");
+
+//adiciona no meio
+//posicao que eu quero que ele fique, quantos elementos eu quero remover, e o que eu quero adicionar 
+linguagens.splice(2,0,"javascript");
+
+// remove o ultimo elemento do array
+linguagens.pop();
+
+// mostra qual elemento foi removido
+const retorno = linguagens.pop();
+console.log(retorno); 
+
+// remove o primeiro elemento do array
+linguagens.shift();
+
+// mostra qual elemento foi removido
+const retorno = linguagens.shift();
+console.log(retorno);3
+
+//percorre o array sem mostrar valores
+// para cada item do array, faça a função
+// usando template string para mostrar o valor ${}
+// usa muito
+linguagens.forEach(linguagens => console.log('linguagens ${linguagens}'));
+
+// função map percorre o array e retorna valores em novo array
+// usa muito
+let numeros = [1,2,3,4,5];
+let dobro = numeros.map(numero => {return numero * 2});
+console.log(dobro); // [2,4,6,8,10]
+
+// filtra, retornando valor de condicao atendida
+// usa muito
+let numeros = [1,2,3,4,5];
+let menoresDeTres = numeros.filter(numero => {return numero < 3});   
+console.log(menoresDeTres); // [1,2]
+
+
+
+
+
