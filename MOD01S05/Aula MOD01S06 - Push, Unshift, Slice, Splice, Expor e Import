@@ -73,7 +73,9 @@ export function sayHi(user) { //direciona de qual arquivo importar
 import {sayHi} from './say.js'; //direciona de qual arquivo exportar
 alert(sayHi); // Hello, John!
 
+// aula 3
 
+// aula 4
 
 
 
